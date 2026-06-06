@@ -2307,3 +2307,112 @@ button.scroll-box {
     display: none !important;
   }
 }}
+
+/* =========================================
+   HERO MOBILE FIX
+========================================= */
+
+@media (max-width: 768px){
+
+  .hero{
+    min-height: auto;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* NAVBAR */
+
+  .navbar{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 32px 24px 0;
+  }
+
+  .logo h1{
+    font-size: 2.2rem;
+    line-height: 1.1;
+  }
+
+  .logo p{
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 320px;
+  }
+
+  .nav-right{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    align-items: center;
+  }
+
+  .nav-right a{
+    font-size: 1rem;
+  }
+
+  /* AVAILABLE BUTTON */
+
+  .work-btn{
+    margin-top: 12px;
+    width: fit-content;
+    padding: 16px 28px;
+    font-size: 1rem;
+    z-index: 50;
+  }
+
+  /* REMOVE HUGE CREATE TEXT */
+
+  .hero-text{
+    font-size: 24vw;
+    top: 52%;
+    opacity: .25;
+  }
+
+  /* PROFILE IMAGE */
+
+  .image-container{
+    width: 280px;
+    height: 420px;
+    margin: 40px auto 0;
+    position: relative;
+    z-index: 20;
+  }
+
+  .image-glow{
+    width: 320px;
+    height: 420px;
+    margin: 0 auto;
+  }
+
+  /* BOTTOM CONTENT */
+
+  .bottom-section{
+    margin-top: 40px;
+    padding: 0 24px 50px;
+  }
+
+  .left{
+    width: 100%;
+  }
+
+  .left p{
+    width: 100%;
+    font-size: 1.05rem;
+    line-height: 1.8;
+  }
+
+  .right{
+    width: 100%;
+    justify-content: flex-start;
+    gap: 30px;
+  }
+
+  .scroll-box{
+    width: 80px;
+    height: 80px;
+  }
+
+}
