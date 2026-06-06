@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- =============================================
+       META & CHARSET
+  ============================================= -->
+
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+  />
+
+  <!-- Primary SEO -->
+  <meta name="description"
+    content="Jash Prajapati — Graphic Designer, Video Editor, 3D Artist & Animator. Crafting cinematic visuals, immersive animations and premium branding experiences." />
+  <meta name="keywords"
+    content="Jash Prajapati, graphic design, video editing, 3D art, motion graphics, animation, portfolio" />
+  <meta name="author" content="Jash Prajapati" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Jash Prajapati | Creative Portfolio" />
+  <meta property="og:description" content="Cinematic visuals, immersive animations and premium branding." />
+  <meta property="og:image"       content="assets/og-cover.jpg" />
+  <meta property="og:url"         content="https://jashprajapati.com" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Jash Prajapati | Creative Portfolio" />
+  <meta name="twitter:description" content="Cinematic visuals, immersive animations and premium branding." />
+  <meta name="twitter:image"       content="assets/og-cover.jpg" />
+
+  <!-- =============================================
+       SECURITY HEADERS
+  ============================================= -->
+
+  <!--
+    NOTE: Content-Security-Policy should be set as an
+    HTTP response header on your server for full effect.
+    The meta tag below is a fallback only.
+    A single meta tag can only carry ONE content value;
+    the original had two content= attributes which is invalid.
+  -->
+  <meta http-equiv="Content-Security-Policy"
+    content="
+      default-src 'self';
+      script-src  'self' 'unsafe-inline'
+                  https://cdn.jsdelivr.net
+                  https://cdnjs.cloudflare.com;
+      style-src   'self' 'unsafe-inline'
+                  https://fonts.googleapis.com
+                  https://cdn.jsdelivr.net;
+      font-src    'self'
+                  https://fonts.gstatic.com
+                  https://cdn.jsdelivr.net;
+      img-src     'self' data: https:;
+      media-src   'self' https:;
+      connect-src 'self' https://formsubmit.co;
+      frame-src   'none';
+    "
+  />
+
+  <meta name="referrer"                          content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options"      content="nosniff" />
+  <meta http-equiv="X-Frame-Options"             content="DENY" />
+  <meta http-equiv="Referrer-Policy"             content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Permissions-Policy"
+    content="camera=(), microphone=(), geolocation=(), payment=()" />
+
+  /*self secured */ 
+  <meta http-equiv="Cross-Origin-Opener-Policy" content="same-origin">
+  <meta http-equiv="Cross-Origin-Resource-Policy" content="same-origin">
+  <meta http-equiv="Origin-Agent-Cluster" content="?1">
+  <meta name="format-detection" content="telephone=no">
+
+  <meta http-equiv="x-dns-prefetch-control" content="off">
+
+  <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate">
+  <meta http-equiv="Pragma" content="no-cache">
+  <meta http-equiv="Expires" content="0">
+
+  /*self secured end */
+  <!-- =============================================
+       TITLE & FAVICON
+  ============================================= -->
+
+  <title>Jash Prajapati | Creative Portfolio</title>
+
+  <link rel="icon"               href="favicon.ico" />
+  <link rel="apple-touch-icon"   href="assets/apple-touch-icon.png" />
+
+  <!-- =============================================
+       FONTS  (preconnect first, then stylesheet)
+  ============================================= -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- =============================================
+       ICONS
+  ============================================= -->
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+    rel="stylesheet"
+  />
+
+  <!-- =============================================
+       STYLESHEET
+  ============================================= -->
+
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- ===========================================
+       CUSTOM CURSOR  (hidden on touch devices via CSS)
+  =========================================== -->
+
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- ===========================================
+       AMBIENT BACKGROUND LIGHTS
+  =========================================== -->
+
+  <div class="gradient-light"  aria-hidden="true"></div>
+  <div class="gradient-light2" aria-hidden="true"></div>
+
+  <!-- ===========================================
+       HERO SECTION
+  =========================================== -->
+
+  <main class="hero" id="home">
+
+    <!-- ── NAVBAR ─────────────────────────── -->
+
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+
+      <div class="logo">
+        <h1>Jash Prajapati</h1>
+        <p>Graphic Designer&nbsp;×&nbsp;Video Editor&nbsp;×&nbsp;3D Artist&nbsp;×&nbsp;Animator</p>
+      </div>
+
+      <div class="nav-right">
+
+        <a href="https://www.instagram.com/nottjashh?igsh=MTZ4OHc1dmNicjBlaw=="
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Instagram profile">
+          Instagram
+        </a>
+
+        <a href="https://www.linkedin.com/in/jash-prajapati-811611296"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn profile">
+          LinkedIn
+        </a>
+
+        <a href="https://www.youtube.com/@nottjashh"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="YouTube channel">
+          YouTube
+        </a>
+
+        <button class="work-btn" type="button" aria-label="Available for work">
+          <span class="dot" aria-hidden="true"></span>
+          Available For Work
+        </button>
+
+      </div>
+
+    </nav>
+
+    <!-- ── BIG DECORATIVE TEXT ────────────── -->
+
+    <div class="hero-text" aria-hidden="true">CREATE</div>
+
+    <!-- ── IMAGE GLOW ─────────────────────── -->
+
+    <div class="image-glow" aria-hidden="true"></div>
+
+    <!-- ── PROFILE IMAGE ──────────────────── -->
+
+    <div class="image-container" id="profile-container" role="button" tabindex="0"
+         aria-label="Click to doodle on this image" title="Doodle on me"
+         onclick="window.location.href='doodle.html'"
+         onkeydown="if(event.key==='Enter')window.location.href='doodle.html'">
+      <img
+        src="assets/profile.png"
+        alt="Jash Prajapati — Creative Portfolio"
+        loading="eager"
+        decoding="async"
+        width="400"
+        height="620"
+      />
+      <div class="doodle-hint" aria-hidden="true">
+        <i class="ri-pen-nib-line"></i> Doodle on me
+      </div>
+    </div>
+
+    <!-- ── FLOATING SKILL TAGS ────────────── -->
+
+    <div class="tag t1" aria-hidden="true">3D ART</div>
+    <div class="tag t2" aria-hidden="true">MOTION</div>
+    <div class="tag t3" aria-hidden="true">CINEMATIC</div>
+    <div class="tag t4" aria-hidden="true">EDITING</div>
+
+    <!-- ── BOTTOM INFO BAR ────────────────── -->
+
+    <div class="bottom-section">
+
+      <div class="left">
+
+        <button class="scroll-box" id="scroll-arrow" aria-label="Scroll to about section" type="button">
+          <i class="ri-arrow-down-line"></i>
+        </button>
+
+        <p>
+          I craft cinematic visuals,
+          immersive animations,
+          premium branding experiences
+          and next-generation digital storytelling.
+        </p>
+
+      </div>
+
+      <div class="right">
+
+        <div class="exp">
+          <h2>2+</h2>
+          <span>Years<br>Experience</span>
+        </div>
+
+        <div class="service">
+          <i class="ri-film-line" aria-hidden="true"></i>
+          <span>Video Editing</span>
+        </div>
+
+        <div class="service">
+          <i class="ri-cube-line" aria-hidden="true"></i>
+          <span>3D Animation</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ===========================================
+       ABOUT SECTION
+  =========================================== -->
+
+  <section class="about-section" id="about" aria-labelledby="about-heading">
+
+    <div class="about-bg-text" aria-hidden="true">ABOUT</div>
+
+    <!-- Left sticky column -->
+    <div class="about-left">
+
+      <div class="about-number" aria-hidden="true">01</div>
+
+      <h2 id="about-heading">
+        Turning ideas into
+        cinematic digital
+        experiences.
+      </h2>
+
+    </div>
+
+    <!-- Right content column -->
+    <div class="about-right">
+
+      <p class="about-description">
+        I'm Jash Prajapati — a multidisciplinary creative
+        specialising in graphic design, cinematic video editing,
+        3D art and motion animation.
+        I blend storytelling, visuals and technology to create
+        immersive digital experiences that feel emotional,
+        modern and unforgettable.
+      </p>
+
+      <div class="skills-grid">
+
+        <div class="skill-card">
+          <span aria-hidden="true">01</span>
+          <h3>Graphic Design</h3>
+          <p>Branding, posters, thumbnails, social media and premium visuals.</p>
+        </div>
+
+        <div class="skill-card">
+          <span aria-hidden="true">02</span>
+          <h3>Video Editing</h3>
+          <p>Cinematic edits, transitions, reels and storytelling.</p>
+        </div>
+
+        <div class="skill-card">
+          <span aria-hidden="true">03</span>
+          <h3>3D Art</h3>
+          <p>Stylized environments, renders, lighting and product visuals.</p>
+        </div>
+
+        <div class="skill-card">
+          <span aria-hidden="true">04</span>
+          <h3>Animation</h3>
+          <p>Motion graphics, smooth animations and immersive visual interactions.</p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ===========================================
+       CREATIVE WALL — SELECTED WORKS
+  =========================================== -->
+
+  <section class="creative-wall" id="works" aria-labelledby="wall-heading">
+
+    <!-- Decorative background word -->
+    <div class="wall-bg-text" aria-hidden="true">UNIVERSE</div>
+
+    <!-- Section header -->
+    <div class="wall-top">
+
+      <span aria-label="Section 02 — Selected Works">02 / SELECTED WORKS</span>
+
+      <h2 id="wall-heading">
+        Creative<br>Wall
+      </h2>
+
+      <p>
+        A curated collection of cinematic visuals,
+        immersive motion graphics, futuristic 3D art
+        and digital storytelling experiments.
+      </p>
+
+    </div>
+
+    <!-- ── WORKS GRID ──────────────────────── -->
+
+    <div class="wall-grid" role="list">
+
+      <!-- ─────────────────────────────────────
+           ROW 1 — two portrait (9:16) columns
+      ───────────────────────────────────────── -->
+
+      <!-- WORK 1 — VFX Scene, portrait 9:16 -->
+      <article class="wall-card card-portrait" role="listitem">
+
+        <div class="wall-card-media">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            aria-hidden="true"
+          >
+            <source src="assets/work1.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="wall-card-info">
+          <div class="wall-card-tags">
+            <span>Motion</span>
+            <span>VFX</span>
+            <span>Cinematic</span>
+          </div>
+          <div class="wall-card-bottom">
+            <div>
+              <p class="wall-card-num" aria-hidden="true">01</p>
+              <h3 class="wall-card-title">VFX Scene</h3>
+              <p class="wall-card-sub">Scene Creation / Cinematic</p>
+            </div>
+            <div class="wall-card-arrow" aria-hidden="true">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- WORK 4 — Poster Design, portrait 9:16 -->
+      <article class="wall-card card-portrait" role="listitem">
+
+        <div class="wall-card-media">
+          <img
+            src="assets/work4.jpg"
+            alt="Poster Design — Photoshop Branding"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="wall-card-info">
+          <div class="wall-card-tags">
+            <span>Photoshop</span>
+            <span>Branding</span>
+          </div>
+          <div class="wall-card-bottom">
+            <div>
+              <p class="wall-card-num" aria-hidden="true">04</p>
+              <h3 class="wall-card-title">Poster Design</h3>
+              <p class="wall-card-sub">Visual Identity / Print</p>
+            </div>
+            <div class="wall-card-arrow" aria-hidden="true">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- ─────────────────────────────────────
+           ROW 2 — three landscape columns
+      ───────────────────────────────────────── -->
+
+      <!-- WORK 2 — 3D Render -->
+      <article class="wall-card card-landscape" role="listitem">
+
+        <div class="wall-card-media">
+          <img
+            src="assets/work2.jpg"
+            alt="3D Render — Blender Sci-Fi Environment"
+            loading="lazy"
+            decoding="async"
+          />
+        </div>
+
+        <div class="wall-card-info">
+          <div class="wall-card-tags">
+            <span>Blender</span>
+            <span>3D</span>
+            <span>Sci-Fi</span>
+          </div>
+          <div class="wall-card-bottom">
+            <div>
+              <p class="wall-card-num" aria-hidden="true">02</p>
+              <h3 class="wall-card-title">3D Render</h3>
+              <p class="wall-card-sub">Lighting / Environment</p>
+            </div>
+            <div class="wall-card-arrow" aria-hidden="true">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- WORK 3 — Motion Graphics -->
+      <article class="wall-card card-landscape" role="listitem">
+
+        <div class="wall-card-media">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            aria-hidden="true"
+          >
+            <source src="assets/work3.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="wall-card-info">
+          <div class="wall-card-tags">
+            <span>Animation</span>
+            <span>Typography</span>
+          </div>
+          <div class="wall-card-bottom">
+            <div>
+              <p class="wall-card-num" aria-hidden="true">03</p>
+              <h3 class="wall-card-title">Motion Graphics</h3>
+              <p class="wall-card-sub">Animation / Typography</p>
+            </div>
+            <div class="wall-card-arrow" aria-hidden="true">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- WORK 5 — Cinematic Reel -->
+      <article class="wall-card card-landscape" role="listitem">
+
+        <div class="wall-card-media">
+          <video
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="none"
+            aria-hidden="true"
+          >
+            <source src="assets/work5.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <div class="wall-card-info">
+          <div class="wall-card-tags">
+            <span>Editing</span>
+            <span>VFX</span>
+            <span>Storytelling</span>
+          </div>
+          <div class="wall-card-bottom">
+            <div>
+              <p class="wall-card-num" aria-hidden="true">05</p>
+              <h3 class="wall-card-title">Cinematic Reel</h3>
+              <p class="wall-card-sub">Editing / VFX / Narrative</p>
+            </div>
+            <div class="wall-card-arrow" aria-hidden="true">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+    </div><!-- /wall-grid -->
+
+  </section><!-- /creative-wall -->
+
+  <!-- ===========================================
+       CONTACT SECTION
+  =========================================== -->
+
+  <section class="contact-section" id="contact" aria-labelledby="contact-heading">
+
+    <div class="contact-bg" aria-hidden="true"></div>
+
+    <div class="contact-header">
+      <span aria-hidden="true">CONTACT</span>
+      <h2 id="contact-heading">Let's Create Something Amazing</h2>
+      <p>
+        Have a project, collaboration, or idea?
+        Reach out and let's build something extraordinary.
+      </p>
+    </div>
+
+    <!-- Quick-reach cards -->
+    <div class="contact-grid">
+
+      <!-- WhatsApp -->
+      <a
+        href="https://wa.me/916354489570?text=Hello%20Jash%2C%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20work%20with%20you."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="contact-card whatsapp"
+        aria-label="Contact via WhatsApp"
+      >
+        <div class="icon" aria-hidden="true">
+          <i class="ri-whatsapp-line"></i>
+        </div>
+        <h3>WhatsApp</h3>
+        <p>Chat instantly with me.</p>
+      </a>
+
+      <!-- Email -->
+      <a
+        href="mailto:work.jashpr@gmail.com"
+        class="contact-card email"
+        aria-label="Send an email"
+      >
+        <div class="icon" aria-hidden="true">
+          <i class="ri-mail-line"></i>
+        </div>
+        <h3>Email</h3>
+        <p>Send me a detailed message.</p>
+      </a>
+
+    </div>
+
+    <!-- Contact form — POST via FormSubmit (no back-end required) -->
+    <form
+      class="contact-form"
+      action="https://formsubmit.co/work.jashpr@gmail.com"
+      method="POST"
+      novalidate
+      aria-label="Contact form"
+    >
+
+      <!-- FormSubmit honeypot anti-spam -->
+      <input type="text"   name="_honey"   style="display:none" tabindex="-1" autocomplete="off" />
+      <!-- Disable FormSubmit's own captcha (we use novalidate + JS) -->
+      <input type="hidden" name="_captcha" value="false" />
+      <input type="hidden" name="_subject" value="New Portfolio Enquiry — Jash Prajapati" />
+      <!--
+        Uncomment and set your own thank-you page URL:
+        <input type="hidden" name="_next" value="https://yoursite.com/thank-you.html" />
+      -->
+      <!-- Prevent redirect (AJAX mode): -->
+      <input type="hidden" name="_template" value="table" />
+
+      <!-- Name -->
+      <div class="input-group">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          autocomplete="name"
+          required
+          minlength="2"
+          maxlength="80"
+        />
+        <label for="name">Your Name</label>
+      </div>
+
+      <!-- Email -->
+      <div class="input-group">
+        <input
+          type="email"
+          name="email"
+          id="email"
+          autocomplete="email"
+          required
+          maxlength="120"
+        />
+        <label for="email">Your Email</label>
+      </div>
+
+      <!-- Message -->
+      <div class="input-group">
+        <textarea
+          name="message"
+          id="message"
+          rows="5"
+          required
+          minlength="10"
+          maxlength="2000"
+        ></textarea>
+        <label for="message">Your Message</label>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="send-btn" aria-label="Send message">
+        <span>Send Message</span>
+        <i class="ri-arrow-right-line" aria-hidden="true"></i>
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- ===========================================
+       SCRIPTS
+       Order: Lenis → GSAP → ScrollTrigger → main
+       (Libraries loaded ONCE, right before </body>)
+  =========================================== -->
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"
+    defer
+  ></script>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"
+    defer
+  ></script>
+
+  <!-- ===========================================
+       HOVER PREVIEW LIGHTBOX
+       Injected once, reused for all wall cards
+  =========================================== -->
+
+  <div class="preview-backdrop" id="preview-backdrop" aria-hidden="true"></div>
+
+  <div class="preview-box" id="preview-box" role="img" aria-label="Project preview" aria-hidden="true">
+    <!-- media injected by JS -->
+    <div class="preview-label" id="preview-label">
+      <div class="preview-label-text">
+        <h4 id="preview-title">—</h4>
+        <p  id="preview-sub">—</p>
+      </div>
+      <span class="preview-label-badge" id="preview-num">01</span>
+    </div>
+  </div>
+
+  <div class="preview-esc-hint" id="preview-esc-hint" aria-hidden="true">
+    Move away to close &nbsp;<span class="preview-esc-key">ESC</span>
+  </div>
+
+  <script src="script.js" defer></script>
+
+</body>
+</html>
