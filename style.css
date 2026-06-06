@@ -2312,14 +2312,15 @@ button.scroll-box {
    HERO MOBILE FIX
 ========================================= */
 
-@media (max-width: 768px){
-
-  .hero{
-    min-height: auto;
-    padding-top: 40px;
-    display: flex;
-    flex-direction: column;
+@media (max-width: 768px) {
+  .image-container {
+    width: 260px;
+    height: 390px;
+    margin: -120px auto 0;
+    position: relative;
+    z-index: 20;
   }
+}
 
   /* NAVBAR */
 
