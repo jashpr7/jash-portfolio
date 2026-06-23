@@ -1,0 +1,11 @@
+Jash Spatial Portfolio V3.8 validation
+
+- TypeScript check: passed
+- ESLint check: passed
+- Next.js production build: passed
+- Contact component import: direct from ./ContactSection
+- Web3Forms: not included
+- Gmail SMTP: not included
+- API keys/passwords: not required
+- Form behaviour: opens a pre-filled Gmail Compose draft and falls back to the device email client
+- node_modules, .next and TypeScript build cache: not included in the download
