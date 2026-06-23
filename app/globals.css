@@ -4375,4 +4375,15 @@ body {
   .orbit-work__heading p {
     font-size: 0.78rem;
   }
+} 
+.loader {
+  animation: loader-emergency-release 0.7s ease 3s forwards;
+}
+
+@keyframes loader-emergency-release {
+  to {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
