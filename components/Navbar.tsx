@@ -4,13 +4,25 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
-const links = [
-  { label: "Work", id: "work" },
-  { label: "Story", id: "lab" },
-  { label: "About", id: "about" },
-  { label: "Services", id: "services" },
-  { label: "Contact", id: "contact" },
-];
+<button type="button" onClick={() => scrollToSection("work")}>
+  WORK
+</button>
+
+<button type="button" onClick={() => scrollToSection("story")}>
+  STORY
+</button>
+
+<button type="button" onClick={() => scrollToSection("about")}>
+  ABOUT
+</button>
+
+<button type="button" onClick={() => scrollToSection("services")}>
+  SERVICES
+</button>
+
+<button type="button" onClick={() => scrollToSection("contact")}>
+  CONTACT
+</button>
 const email = "work.jashpr@gmail.com";
 
 export function Navbar() {
