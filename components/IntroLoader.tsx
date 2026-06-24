@@ -103,7 +103,7 @@ export function IntroLoader() {
             animate={{ clipPath: "inset(0 0% 0 0)" }}
             transition={{ duration: 0.85, ease: "easeInOut" }}
           >
-            JASH®
+            JASH
           </motion.div>
 
           <div className="loader__bar">
