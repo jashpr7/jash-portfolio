@@ -4387,11 +4387,4 @@ body {
     pointer-events: none;
   }
 }
-.navbar button {
-  border: 0;
-  padding: 0;
-  background: transparent;
-  color: inherit;
-  font: inherit;
-  cursor: pointer;
-}
+
