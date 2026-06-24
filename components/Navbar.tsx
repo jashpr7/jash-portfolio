@@ -5,13 +5,12 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const links = [
-  { label: "Work", href: "#work" },
-  { label: "Story", href: "#lab" },
-  { label: "About", href: "#about" },
-  { label: "Services", href: "#services" },
-  { label: "Contact", href: "#contact" },
+  { label: "Work", id: "work" },
+  { label: "Story", id: "lab" },
+  { label: "About", id: "about" },
+  { label: "Services", id: "services" },
+  { label: "Contact", id: "contact" },
 ];
-
 const email = "work.jashpr@gmail.com";
 
 export function Navbar() {
@@ -24,17 +23,24 @@ export function Navbar() {
 
   return (
     <header className={`nav-wrap${open ? " is-open" : ""}`}>
-      <a className="brand magnetic" href="#top" aria-label="Jash Prajapati, home">
-        JASH<span></span>
-      </a>
+      <button
+  type="button"
+  onClick={() => scrollToSection("top")}
+  className="navbar__logo"
+>
+  JASH
+</button>
 
       <nav className="desktop-nav" aria-label="Primary navigation">
         {links.map((link) => (
-          <a key={link.href} className="nav-link" href={link.href}>
-            <span>{link.label}</span>
-            <span aria-hidden="true">{link.label}</span>
-          </a>
-        ))}
+  <button
+    key={link.label}
+    type="button"
+    onClick={() => scrollToSection(link.id)}
+  >
+    {link.label}
+  </button>
+))}
       </nav>
 
       <a className="availability" href={`mailto:${email}`}>
