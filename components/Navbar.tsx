@@ -36,23 +36,18 @@ export function Navbar() {
   return (
     <header className={`nav-wrap${open ? " is-open" : ""}`}>
       <button
-  type="button"
-  onClick={() => scrollToSection("top")}
-  className="navbar__logo"
->
-  JASH
-</button>
+        type="button"
+          onClick={() => scrollToSection("top")}
+          className="navbar__logo">
+        JASH
+      </button>
 
       <nav className="desktop-nav" aria-label="Primary navigation">
         {links.map((link) => (
-  <button
-    key={link.label}
-    type="button"
-    onClick={() => scrollToSection(link.id)}
-  >
-    {link.label}
-  </button>
-))}
+          <a key={link.label} href={link.href}>
+            {link.label}
+          </a>
+        ))}
       </nav>
 
       <a className="availability" href={`mailto:${email}`}>
