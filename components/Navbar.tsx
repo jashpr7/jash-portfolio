@@ -2,27 +2,16 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowUpRight, Menu, X } from "lucide-react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 
-<button type="button" onClick={() => scrollToSection("work")}>
-  WORK
-</button>
+const links = [
+  { label: "Work", href: "#work" },
+  { label: "Story", href: "#lab" },
+  { label: "About", href: "#about" },
+  { label: "Services", href: "#services" },
+  { label: "Contact", href: "#contact" },
+];
 
-<button type="button" onClick={() => scrollToSection("story")}>
-  STORY
-</button>
-
-<button type="button" onClick={() => scrollToSection("about")}>
-  ABOUT
-</button>
-
-<button type="button" onClick={() => scrollToSection("services")}>
-  SERVICES
-</button>
-
-<button type="button" onClick={() => scrollToSection("contact")}>
-  CONTACT
-</button>
 const email = "work.jashpr@gmail.com";
 
 export function Navbar() {
@@ -33,19 +22,35 @@ export function Navbar() {
     return () => document.body.classList.remove("menu-open");
   }, [open]);
 
+  const handleNavigation = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+
+    event.preventDefault();
+    setOpen(false);
+    scrollToSection(href.slice(1));
+  };
+
   return (
     <header className={`nav-wrap${open ? " is-open" : ""}`}>
-      <button
-        type="button"
-          onClick={() => scrollToSection("top")}
-          className="navbar__logo">
+      <a
+        className="brand magnetic"
+        href="#top"
+        aria-label="Jash Prajapati, home"
+        onClick={(event) => handleNavigation(event, "#top")}
+      >
         JASH
-      </button>
+      </a>
 
       <nav className="desktop-nav" aria-label="Primary navigation">
         {links.map((link) => (
-          <a key={link.label} href={link.href}>
-            {link.label}
+          <a
+            key={link.href}
+            className="nav-link"
+            href={link.href}
+            onClick={(event) => handleNavigation(event, link.href)}
+          >
+            <span>{link.label}</span>
+            <span aria-hidden="true">{link.label}</span>
           </a>
         ))}
       </nav>
@@ -89,7 +94,7 @@ export function Navbar() {
                   initial={{ y: 42, opacity: 0 }}
                   animate={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.12 + index * 0.065 }}
-                  onClick={() => setOpen(false)}
+                  onClick={(event) => handleNavigation(event, link.href)}
                 >
                   <span>0{index + 1}</span>
                   {link.label}
@@ -105,6 +110,7 @@ export function Navbar() {
     </header>
   );
 }
+
 const scrollToSection = (sectionId: string) => {
   const section = document.getElementById(sectionId);
 

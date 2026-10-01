@@ -4,6 +4,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { ArrowDownRight, ArrowUpRight, Asterisk, Sparkles } from "lucide-react";
 import type { MouseEvent } from "react";
+import profileArt from "@/public/images/profile-art.webp";
 
 const specialties = ["Photoshop", "Motion", "VFX", "Blender"];
 
@@ -83,7 +84,7 @@ export function Hero() {
         </div>
         <div className="hero__portrait-frame" data-protected-media>
           <Image
-            src="/images/profile-art.webp"
+            src={profileArt}
             alt="Portrait of Jash Prajapati, graphic designer and 3D artist"
             fill
             priority
