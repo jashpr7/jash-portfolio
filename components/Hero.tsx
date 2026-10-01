@@ -4,7 +4,7 @@ import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import Image from "next/image";
 import { ArrowDownRight, ArrowUpRight, Asterisk, Sparkles } from "lucide-react";
 import type { MouseEvent } from "react";
-import profileArt from "@/public/images/profile-art.webp";
+import profileArt from "@/public/images/profile-art.png";
 
 const specialties = ["Photoshop", "Motion", "VFX", "Blender"];
 
